@@ -1,0 +1,29 @@
+.img-container
+  background-color  rgb(202, 204, 205)
+  img
+    opacity 0
+    transition opacity  0.3s
+    &.active
+      opacity 1
+.img-container-left-btn
+.img-container-right-btn
+  position absolute
+  top 50%
+  width 39px
+  height 80px
+  overflow hidden
+  cursor pointer
+  text-indent -9999px
+  margin-top -40px //图片高度的一半
+  background url("img/btn.png") no-repeat
+  opacity 0
+  transition opacity 0.4s
+.img-container-left-btn
+  left 10px
+.img-container-right-btn
+  right 10px
+  background-position -39px 0
+.img-container-right-btn.show
+.img-container-left-btn.show
+  opacity 1
+
