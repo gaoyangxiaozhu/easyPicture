@@ -1,0 +1,4 @@
+$(function(){
+    $(".img-container").easyPicture();
+    
+})

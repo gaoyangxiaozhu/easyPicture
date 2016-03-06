@@ -13,20 +13,20 @@ gulp.task('jade', function(){
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest('../desc/'))
+    .pipe(gulp.dest('./desc/'))
 })
 
 //stylus to css
 gulp.task('stylus', function(){
   gulp.src('./sources/*.styl')
   .pipe(stylus())
-  .pipe(gulp.dest('../desc/css/'))
+  .pipe(gulp.dest('./desc/css/'))
 
 })
 //watcher
 gulp.task('watch', function(){
   gulp.watch(['./sources/*.styl'], ['stylus'])
-  gulp.watch(['./angular/*.jade'], ['jade'])
+  gulp.watch(['./sources/*.jade'], ['jade'])
 })
 
 // default
